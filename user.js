@@ -17,7 +17,7 @@ fetch('https://jsonplaceholder.typicode.com/users/' + userId)
                           </ul>`;
   })
 
-fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
+                 fetch(`https://jsonplaceholder.typicode.com/users/${userId}/posts`)
   .then(res => res.json())
   .then(posts => {
     const postsWrapper = document.querySelector('#posts-wrapper');
